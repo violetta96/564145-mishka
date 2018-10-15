@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виоланта Свирид](https://up.htmlacademy.ru/adaptive/15/user/564145).
-* Наставник: `Неизвестно`.
+* Наставник: `Неизвестно`
 
 ---
 
