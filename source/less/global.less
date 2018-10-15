@@ -1,0 +1,128 @@
+body {
+  color: @text-color;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+
+  background-color: @background-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 668px;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1050px;
+    padding: 0 50px;
+  }
+}
+
+.header-container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .header-container {
+    width: 768px;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-container {
+    width: 1150px;
+    padding: 0;
+  }
+}
+
+.product-container {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .product-container {
+    width: 668px;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-container {
+    width: 875px;
+    padding: 0 50px;
+    margin: 0;
+  }
+}
+
+.form-container {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-container {
+    width: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-container {
+    width: auto;
+    padding: 0;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip-path: inset(100%);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 95;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,.8);
+}
+
+.overlay-show {
+  display: block;
+}

@@ -1,0 +1,231 @@
+.promo {
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% -7%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 550px auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    background-color: #f9f9f9;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    z-index: 1;
+    margin-top: -60px;
+    padding-top: 60px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1150px auto;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    padding-top: 68px;
+    margin-top: 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1150px auto;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .promo-wrapper {
+    position: relative;
+    z-index: 3;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -13px;
+      left: 0;
+      width: 100%;
+      height: 24px;
+      background: url(../img/bg-zigzag-fill.svg) repeat-x;
+      background-size: 768px 26px;
+    }
+  }
+}
+
+.promo__banner-title {
+  .p-reset();
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 122px;
+  font-size: 27px;
+  line-height: 30px;
+  font-family: "Open Sans Bold","Arial",sans-serif;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__banner-title {
+    padding-top: 93px;
+    padding-bottom: 373px;
+    font-size: 43px;
+    line-height: 50px;
+    width: 500px;
+    margin: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__banner-title {
+    padding-top: 87px;
+    padding-bottom: 358px;
+    font-size: 53px;
+    line-height: 57px;
+    width: 620px;
+  }
+}
+
+.promo__category {
+  width: 320px;
+  margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__category {
+    width: 668px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__category {
+    width: 1050px;
+  }
+}
+
+.promo__category-list {
+  .ul-reset()
+}
+
+@media (min-width: @tablet-width) {
+  .promo__category-list {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__category-list {
+  }
+}
+
+.promo__category-item--accessory {
+  background-color: @contrast-color;
+}
+
+.promo__category-item--toy {
+  background-color: @contrast-extra-color;
+}
+
+.promo__category-link {
+  display: inline-block;
+  width: 260px;
+  font-size: 19px;
+  line-height: 24px;
+  font-family: "Open Sans Bold","Arial",sans-serif;
+  color: @contrast-text-color;
+  text-decoration: none;
+  margin: auto;
+  padding: 27px 30px;
+  position: relative;
+}
+
+
+.promo__category-link--accessory {
+  &::after {
+    position: absolute;
+    top: 22px;
+    right: 38px;
+    width: 40px;
+    height: 63px;
+    content: "";
+
+    background: url("../img/icon-interior.svg") no-repeat 0 0;
+ }
+
+ &:active {
+   opacity: 0.3;
+ }
+}
+
+.promo__category-link--toy {
+  &::after {
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    width: 60px;
+    height: 63px;
+    content: "";
+
+    background: url("../img/icon-toy.svg") no-repeat 0 0;
+ }
+
+ &:active {
+   opacity: 0.3;
+ }
+}
+
+@media (min-width: @tablet-width) {
+  .promo__category-link--accessory {
+    &::after {
+      top: 30px;
+  }
+}
+
+  .promo__category-link--toy {
+    &::after {
+      top: 32px;
+      right: 35px;
+   }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .promo__category-link {
+    font-size: 20px;
+    line-height: 30px;
+    width: 264px;
+    padding: 27px 35px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__category-link {
+    width: 455px;
+  }
+}
+
+.promo__category-accessory,
+.promo__category-toy {
+  padding-right: 90px;
+}
+
+@media (min-width: @desktop-width) {
+  .promo__category-accessory,
+  .promo__category-toy {
+    padding-right: 270px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .promo__category-item {
+    &:hover {
+      transform: translateY(-5%);
+      margin-bottom: -6px;
+    }
+  }
+}
