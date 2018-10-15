@@ -1,0 +1,58 @@
+.main-block {
+  padding: 76px 0;
+  padding-top: 70px;
+  background-color: @blocks-background-color;
+}
+
+@media (min-width: @tablet-width) {
+  .main-block {
+    padding: 79px 0;
+    padding-top: 95px;
+    position: relative;
+    z-index: 1;
+    margin-top: -60px;
+
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -13px;
+      left: 0;
+      width: 100%;
+      height: 24px;
+      background: url(../img/bg-zigzag-fill.svg) repeat-x;
+      background-size: 768px 26px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-block {
+    padding: 102px 0;
+    padding-top: 95px;
+    margin-top: 0;
+    z-index: 1;
+  }
+}
+
+.main-block__title {
+  .p-reset();
+  text-align: center;
+  font-size: 27px;
+  line-height: 30px;
+  font-family: "Open Sans Bold","Arial",sans-serif;
+}
+
+@media (min-width: @tablet-width) {
+  .main-block__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-block__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
