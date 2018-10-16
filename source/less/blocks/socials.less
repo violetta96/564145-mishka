@@ -19,11 +19,6 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-  .socials__list {
-  }
-}
-
 .socials__link {
   display: inline-block;
 }
@@ -31,16 +26,17 @@
 @media (min-width: @tablet-width) {
   .socials__link {
     &:hover {
-    .socials__link-img path {
-          fill: #46c1ae;
+      .socials__link-img path {
+        fill: #46c1ae;
       }
-    &:active {
-    .socials__link-img path {
+
+      &:active {
+        .socials__link-img path {
           opacity: 0.3;
+        }
       }
+    }
   }
-}
-}
 }
 
 .socials__link--instagram {

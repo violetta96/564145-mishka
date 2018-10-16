@@ -1,5 +1,6 @@
 .contacts {
   position: relative;
+
   &::before {
     position: absolute;
     top: 0;
@@ -55,7 +56,7 @@
   font-size: 18px;
   line-height: 30px;
   color: @text-color;
-  font-family: "Open Sans Bold","Arial",sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   margin-left: -3px;
 }
 
@@ -69,6 +70,7 @@
     line-height: 50px;
     margin-left: -6px;
     position: relative;
+
     &::before {
       position: absolute;
       bottom: 37px;
@@ -89,6 +91,7 @@
     font-size: 53px;
     line-height: 57px;
     margin-left: -7px;
+
     &::before {
       bottom: 37px;
       left: -105px;
@@ -164,7 +167,7 @@
   &:active {
     color: #46c1ae;
     border-bottom: 1px solid #46c1ae;
-    opacity: 0.3
+    opacity: 0.3;
   }
 }
 
@@ -192,11 +195,6 @@
   width: 100%;
   height: 460px;
   z-index: 4;
-}
-
-@media (min-width: @tablet-width) {
-  .contacts__map-js {
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -301,7 +299,7 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  font-family: "Open Sans Bold","Arial",sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   cursor: pointer;
 }
 
@@ -320,9 +318,10 @@
     &:hover {
       background-color: #444444;
       color: #ffffff;
-      }
+    }
+
     &:active {
       color: #7c7c7c;
-      }
+    }
   }
 }
