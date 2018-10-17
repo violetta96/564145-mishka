@@ -108,12 +108,20 @@
 }
 
 .promo__category-list {
-  .ul-reset()
+  .ul-reset();
 }
 
 @media (min-width: @tablet-width) {
   .promo__category-list {
     display: flex;
+    flex-wrap: wrap;
+    width: 668px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__category-list {
+    width: 1050px;
   }
 }
 

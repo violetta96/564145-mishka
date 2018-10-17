@@ -4,6 +4,10 @@ var navToggle = document.querySelector('.main-nav__burger');
 
 navMain.classList.remove('main-nav--nojs');
 userMain.classList.remove('user-nav--nojs');
+navMain.classList.remove('main-nav--open');
+userMain.classList.remove('user-nav--open');
+navMain.classList.add('main-nav--close');
+userMain.classList.add('user-nav--close');
 
 navToggle.addEventListener('click', function() {
 if (navMain.classList.contains('main-nav--close') && userMain.classList.contains('user-nav--close')) {
