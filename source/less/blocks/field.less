@@ -361,7 +361,8 @@
 }
 
 .field__list {
-  .ul-reset()
+  .ul-reset();
+  flex-wrap: wrap;
 }
 
 @media (min-width: @desktop-width) {
@@ -652,7 +653,7 @@
 @media (min-width: @desktop-width) {
   .field__label--color:active::before {
     top: -18px;
-    left: 80px;
+    left: -80px;
     width: 48px;
     height: 48px;
   }
