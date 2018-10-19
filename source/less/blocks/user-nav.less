@@ -10,7 +10,7 @@
     width: 350px;
     padding-right: 50px;
     border-bottom: 1px solid @border-color;
-    background-color: #ffffff;
+    background-color: @contrast-text-color;
   }
 }
 
@@ -93,13 +93,17 @@
   text-decoration: none;
 
   &:hover {
-    .user-nav__img path {
-      fill: #63d1bb;
+    color: @link-darker-color;
+
+    .user-nav__img {
+      color: @icon-extra-color;
     }
 
     &:active {
-      .user-nav__img path {
-        fill: #63d1bb;
+      color: @link-extra-color;
+
+      .user-nav__img {
+        color: @contrast-color;
         opacity: 0.3;
       }
     }
@@ -112,11 +116,11 @@
     line-height: 24px;
 
     &:hover {
-      color: #666666;
+      color: @link-darker-color;
     }
 
     &:active {
-      color: #b2b2b2;
+      color: @link-extra-color;
     }
   }
 }
@@ -163,6 +167,11 @@
   .user-nav__img {
     padding-left: 30px;
   }
+}
+
+.user-nav__img--search,
+.user-nav__img--cart {
+  color: @icon-color;
 }
 
 @media (min-width: @tablet-width) {

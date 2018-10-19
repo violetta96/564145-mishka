@@ -3,7 +3,7 @@
 
   &::before {
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 0;
     width: 100%;
     height: 6px;
@@ -157,16 +157,16 @@
 
 .contacts__link {
   padding-bottom: 4px;
-  border-bottom: 1px solid #62d1ba;
+  border-bottom: 1px solid @border-extra-color;
 
   &:hover {
-    color: #46c1ae;
-    border-bottom: 1px solid #46c1ae;
+    color: @icon-extra-color;
+    border-bottom: 1px solid @icon-extra-color;
   }
 
   &:active {
-    color: #46c1ae;
-    border-bottom: 1px solid #46c1ae;
+    color: @icon-extra-color;
+    border-bottom: 1px solid @icon-extra-color;
     opacity: 0.3;
   }
 }
@@ -290,7 +290,7 @@
   width: 256px;
   padding: 14px 0;
 
-  border: 2px solid #444444;
+  border: 2px solid @btn-text-color;
   background-color: @background-color;
 
   color: @btn-text-color;
@@ -316,12 +316,12 @@
     margin-left: 0;
 
     &:hover {
-      background-color: #444444;
-      color: #ffffff;
+      background-color: @btn-text-color;
+      color: @contrast-text-color;
     }
 
     &:active {
-      color: #7c7c7c;
+      color: @text-color-active;
     }
   }
 }

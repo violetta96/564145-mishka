@@ -201,15 +201,19 @@
   }
 }
 
+.catalog__item-footer-img {
+  color: @icon-color;
+}
+
 .catalog__item-footer-link {
   &:hover {
-    .catalog__item-footer-img path {
-      fill: #63d1bb;
+    .catalog__item-footer-img {
+      color: @contrast-color;
     }
 
     &:active {
-      .catalog__item-footer-img path {
-        fill: #63d1bb;
+      .catalog__item-footer-img {
+        color: @contrast-color;
         opacity: 0.3;
       }
     }
