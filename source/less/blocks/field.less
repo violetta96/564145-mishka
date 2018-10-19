@@ -170,7 +170,7 @@
     left: 0;
     width: 198px;
     height: 1px;
-    background-color: #62d1ba;
+    background-color: @border-extra-color;
   }
 }
 
@@ -817,6 +817,7 @@
 .field__img {
   position: absolute;
   opacity: 1;
+  color: @icon-darker-color;
 }
 
 .field__img--tel {
@@ -861,16 +862,16 @@
   }
 }
 
-.field__text:hover ~ .field__img path {
-  fill: #46c1ae;
+.field__text:hover ~ .field__img {
+  color: @icon-extra-color;
 }
 
-.field__text:active ~ .field__img path {
-  fill: #46c1ae;
+.field__text:active ~ .field__img {
+  color: @icon-extra-color;
 }
 
-.field__text:focus ~ .field__img path {
-  fill: #46c1ae;
+.field__text:focus ~ .field__img {
+  color: @icon-extra-color;
 }
 
 .field__text-contacts-tel:hover::before {

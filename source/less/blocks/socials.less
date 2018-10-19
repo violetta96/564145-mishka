@@ -24,15 +24,19 @@
   display: inline-block;
 }
 
+.socials__link-img {
+  color: @icon-darker-color;
+}
+
 @media (min-width: @tablet-width) {
   .socials__link {
     &:hover {
-      .socials__link-img path {
-        fill: #46c1ae;
+      .socials__link-img {
+        color: @icon-extra-color;
       }
 
       &:active {
-        .socials__link-img path {
+        .socials__link-img {
           opacity: 0.3;
         }
       }
