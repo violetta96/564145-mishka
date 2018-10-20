@@ -155,6 +155,7 @@
                 <div class="field-container">
                   <h3 class="field__title field__title--contacts">Тел</h3>
                   <p class="field__item field__item--contacts-tel">
+                    <label for="field-tel" class="visually-hidden">Телефон:</label>
                     <input id="field-tel" class="field__text field__text-contacts field__text-contacts-tel" type="tel" name="tel" value="" placeholder="+7 ХХХ ХХ ХХ*" required>
                     <svg class="field__img field__img--tel" width="25px" height="25px">
                       <use xlink:href="#icon-tel"></use>
@@ -168,6 +169,7 @@
                 <div class="field-container">
                   <h3 class="field__title field__title--contacts field__title--contacts-email">E-mail</h3>
                   <p class="field__item field__item--contacts-email">
+                    <label for="field-email" class="visually-hidden">E-mail:</label>
                     <input id="field-email" class="field__text field__text-contacts field__text-contacts-email" type="email" name="email" value="" placeholder="Ваш Email*" required>
                     <svg class="field__img field__img--email" width="30px" height="25px">
                       <use xlink:href="#icon-email"></use>
@@ -181,6 +183,7 @@
                 <div class="field-container">
                   <h3 class="field__title field__title--comment">Доп</h3>
                   <p class="field__item field__item--comment">
+                    <label for="field-comment" class="visually-hidden">Комментарий</label>
                     <textarea class="field__comment" id="field-comment" name="comment" rows="6" cols="44" placeholder="Опишите все ваши пожелания к заказу" required="required"></textarea>
                   </p>
                 </div>
@@ -243,7 +246,7 @@
             <div class="copyright">
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
                 <span class="copyright__link-info">Разработано</span>
-                <svg class="copyright__link-img" width="26.943px" height="34.09px">
+                <svg class="copyright__link-img" width="26.943px" height="34.09px" aria-label="HTML Academy">
                   <use xlink:href="#icon-copyright"></use>
                 </svg>
               </a>
